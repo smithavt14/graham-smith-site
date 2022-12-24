@@ -1,5 +1,18 @@
+import Image from 'next/image'
+
+const imageArray = [...Array(13).keys()]
+
 export default function Roman() {
   return (
-    <div className="text-white">Hello Roman</div>
+    <>
+      <h1 className="text-4xl text-white font-black">Roman</h1>
+      <div className="mt-16 mb-32 grid grid-cols-3 gap-16">
+        {imageArray.map((i, index) => (
+          <div key={index} className="flex h-80 w-64 rounded overflow-hidden">
+            <Image className="h-full object-cover" width="500" height="500" alt="This is Roman" src={`/roman/roman-${i + 1}.jpg`} />
+          </div>
+        ))}
+      </div>
+    </>
   )
 }

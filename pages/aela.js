@@ -1,13 +1,18 @@
 import Image from 'next/image'
 
-import aela1 from '../public/aela/aela-1.jpg'
+const imageArray = [...Array(13).keys()]
 
 export default function Aela() {
   return (
-    <div className="grid grid-cols-4 gap-4">
-      <div className="group mx-8 transition-all duration-200 overflow-hidden relative cursor-pointer h-80 w-64 shadow-lg rounded hover:scale-105">
-        <Image alt="This is Aela" src={aela1} />
+    <>
+      <h1 className="text-4xl text-white font-black">Aela</h1>
+      <div className="mt-16 mb-32 grid grid-cols-3 gap-16">
+        {imageArray.map((i, index) => (
+          <div key={index} className="flex h-80 w-64 rounded overflow-hidden">
+            <Image className="h-full object-cover" width="500" height="500" alt="This is Aela" src={`/aela/aela-${i + 1}.jpg`} />
+          </div>
+        ))}
       </div>
-    </div>
+    </>
   )
 }
