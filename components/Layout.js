@@ -1,6 +1,6 @@
 // components/layout.js
-import Navbar from './navbar'
-import PageHead from './Head';
+import Navbar from './Navbar.js'
+import PageHead from './Head.js'
 
 import { Roboto } from '@next/font/google'
 const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto', weight: ['300', '900'] })
