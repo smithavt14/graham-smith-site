@@ -8,7 +8,7 @@ export default function Roman() {
       <h1 className="text-4xl text-white font-black">Roman</h1>
       <div className="mt-16 mb-32 grid grid-cols-1 md:grid-cols-3 gap-16">
         {imageArray.map((i, index) => (
-          <div key={index} className="flex h-80 w-64 rounded overflow-hidden">
+          <div key={index} className="transition-all duration-200 flex h-80 w-64 rounded overflow-hidden shadow-lg hover:shadow-slate-800 hover:scale-105">
             <Image className="h-full object-cover" width="500" height="500" alt="This is Roman" src={`/roman/roman-${i + 1}.jpg`} />
           </div>
         ))}
