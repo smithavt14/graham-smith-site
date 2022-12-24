@@ -10,7 +10,7 @@ export default function Layout({children}) {
     <>
       <PageHead />
       <Navbar />
-      <main className={`bg-gray-900 min-h-screen flex flex-col items-center ${roboto.className} font-sans pt-40`}>{children}</main>
+      <main className={`bg-gray-900 min-h-screen flex flex-col items-center ${roboto.className} font-sans py-32`}>{children}</main>
     </>
   )
 }
