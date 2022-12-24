@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const imageArray = [...Array(19).keys()]
+const imageArray = [...Array(27).keys()]
 
 export default function Roman() {
   return (
