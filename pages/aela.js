@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-const imageArray = [...Array(13).keys()]
+const imageArray = [...Array(22).keys()]
 
 export default function Aela() {
   return (
